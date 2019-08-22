@@ -1,0 +1,21 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<table>
+<th>useriD</th>
+<th>id</th>
+<th>TITLE</th>
+<th>Body</th>
+
+  <tr *ngFor="let data of data ">
+
+  <td>{{data.userId}}</td>
+   <td>{{data.id}}</td>
+    <td>{{data.title}}</td>
+     <td>{{data.body}}</td>
+     </tr>
+
+
+</table>
+
