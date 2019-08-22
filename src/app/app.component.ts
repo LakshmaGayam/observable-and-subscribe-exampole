@@ -8,7 +8,7 @@ import {post} from './classpost'
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements  OnInit {
-  name = 'Angular';
+  name =522;
  public  data=[];
   constructor(private apiser:ApiServiceService)
   {
