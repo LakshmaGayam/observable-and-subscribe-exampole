@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { ApiServiceService } from './api-service.service';
+import {HttpParams}from '@angular/common/http'
 import {post} from './classpost'
 @Component({
   selector: 'my-app',
@@ -20,5 +21,11 @@ export class AppComponent implements  OnInit {
 this.data=data;
       }
     );
+    this.apiser.getparams().subscribe(
+     data=> {
+this.data=data;
+      }
+    )
   }
+  
 }
